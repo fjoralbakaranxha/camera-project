@@ -1,0 +1,14 @@
+<div>
+    <div>
+      <div style=height:900px;width:900px;display:block;margin-left:200px;>
+        <button mat-raised-button color="accent" style="margin-left: 1000px;" (click)="refreshChart()">Refresh</button>
+        <canvas baseChart
+          [data]="barChartData"
+          [options]="barChartOptions"
+          [type]="barChartType"
+          (chartHover)="chartHovered($event)"
+          (chartClick)="chartClicked($event)">
+        </canvas>
+      </div>
+    </div>
+  </div>

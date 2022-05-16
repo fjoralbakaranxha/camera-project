@@ -1,0 +1,25 @@
+<h1 mat-dialog-title>{{dialogTitle}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]='cameraForm'>
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input formControlName="name" matInput placeholder="Name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Model</mat-label>
+      <input formControlName="model" for matInput placeholder="Model">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Resolution</mat-label>
+      <input formControlName="resolution" matInput placeholder="Resolution">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>IP</mat-label>
+      <input formControlName="ip" matInput placeholder="Ip">
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button mat-raised-button color="primary" (click)="onSubmit()" >{{buttonText}}</button>
+</div>
