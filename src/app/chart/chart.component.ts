@@ -40,7 +40,7 @@ export class ChartComponent implements OnInit {
 
   public barChartOptions: ChartConfiguration['options'] = {
     responsive: true,
-    // We use these empty structures as placeholders for dynamic theming.
+   
     scales: {
       x: {},
       y: {
