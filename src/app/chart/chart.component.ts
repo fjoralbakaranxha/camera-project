@@ -4,7 +4,7 @@ import { BaseChartDirective } from 'ng2-charts';
 import { ChartCell } from '../models/ChartCell';
 import { ApiService } from '../services/api.service';
 
-// import DataLabelsPlugin from 'chartjs-plugin-datalabels';
+
 
 @Component({
   selector: 'app-chart',
